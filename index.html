@@ -16,6 +16,16 @@
         <click-counter></click-counter>
     </div>
 
+    <script type="text/x-template" id="click-counter-template">
+      <!-- There is no limitetion of the amount
+       of elements you can have inside the componet 
+       single root div template -->
+      <div>
+        <p>the count is:</p>
+        <button @click="count++">{{count}}</button>
+      </div>
+    </script>
+
 
   <script src="https://unpkg.com/vue"></script>
   <script src="app.js"></script>
